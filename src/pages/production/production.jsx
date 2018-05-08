@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getProData, togSelectPro, editPro } from '@/store/production/action';
 import PropTypes from 'prop-types';
 import PublicHeader from '@/components/header/header';
-import './production.css';
+import './production.less';
 
 class Production extends Component{
   static propTypes = {
@@ -21,6 +21,7 @@ class Production extends Component{
    */
   handleEdit = (index, num) => {
     let currentNum = this.props.proData.dataList[index].selectNum + num;
+    console.log(currentNum)
     if(currentNum < 0){
       return
     }
