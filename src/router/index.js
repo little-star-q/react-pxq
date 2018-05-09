@@ -18,7 +18,7 @@ export default class RouteConfig extends Component{
           <Route path="/record" component={record} />
           <Route path="/helpcenter" component={helpcenter} />
           <Route path="/production" component={production} />
-          <Route path="/balance" component={balance} />
+          <Route path="/brokerage" component={balance} />
           <Redirect to="/" />
         </Switch>
       </HashRouter>
