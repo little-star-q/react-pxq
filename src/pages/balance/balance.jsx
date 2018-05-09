@@ -82,7 +82,6 @@ class BrokeRage extends Component{
   }
 
   componentDidMount(){
-    console.log(this.props)
     this.initData();
   }
 
